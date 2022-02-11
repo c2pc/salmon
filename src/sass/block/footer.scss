@@ -1,0 +1,28 @@
+footer {
+  max-width: 1280px;
+  width: 100%;
+  padding: 45px 20px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  .item{
+    width: 50%;
+    p{
+      margin: 0;
+      font-family: $font-inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  .promotion{
+    width: 40%;
+    .black{
+      font-weight: bold;
+    }
+  }
+}

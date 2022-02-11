@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
 }
 
-body.main {
+body.main, body.ends {
   background-color: #F0FAFF;
 }
 
@@ -27,7 +27,7 @@ body.tests {
 }
 
 .hidden {
-  display: none;
+  display: none!important;
 }
 
 @import 'block/*.scss';

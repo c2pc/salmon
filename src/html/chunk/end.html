@@ -1,0 +1,34 @@
+<div class="end">
+  <div class="end__items">
+    <div class="description__container">
+      <div class="present-container">
+        <div class="heart"><img src="img/heart60.svg" alt=""></div>
+        <p class="header">Вы лосось, влюблённый в себя на 60%</p>
+        <p class="description">Неплохой результат, но лосось Леонид знает, что вы можете относиться к себе бережнее.
+          Мы уверены, что со временем у вас получится полюбить себя чистой рыбьей любовью на все 100%.
+        </p>
+        <div class="button__container">
+          @@include("button.html",{
+          "class":"button__end",
+          "text":"Забрать подарок"
+          })
+        </div>
+      </div>
+      <div class="socials">
+        <div class="items">
+          <a class="social" href="#"><img src="img/instagram.svg" alt=""></a>
+          <a class="social" href="#"><img src="img/vk.svg" alt=""></a>
+          <a class="social" href="#"><img src="img/facebook.svg" alt=""></a>
+        </div>
+        <p class="description">Поделись результатом с друзьями!</p>
+      </div>
+    </div>
+    @@include("salmon.html",{
+    "class": "salmon__image__end",
+    "src": "img/salmon-background.svg",
+    "srcMob": "img/salmon-background-mob.svg",
+    "quote":"Как здорово, что ты научился понимать себя лучше. Удачи тебе!"
+    })
+  </div>
+  @@include("present.html")
+</div>

@@ -1,9 +1,11 @@
 import {questions} from './questions'
+import {presents} from './present'
 
 const getStages = (...stages) => {
   return ['main', 'tests', 'end'].filter(item => !stages.includes(item))
 }
 const main = document.querySelector(".main-container")
+const end = document.querySelector(".end-block")
 const tests = document.querySelector(".test-container")
 const body = document.querySelector("body")
 const number = tests.querySelector(".test__number")
@@ -27,7 +29,7 @@ const Test = {
     this.stage = 'end'
     this.setHidden(main)
     this.setHidden(tests)
-    //this.setVisible(end)
+    this.setVisible(end)
   },
   setStageTest: function () {
     this.setBody('tests')
@@ -39,8 +41,43 @@ const Test = {
     this.setVisible(tests)
   },
   calcPoints: function () {
+    let percent = 0
+    let text = ''
     this.points = this.questions.reduce((sum, question) => sum + question.answers[question.answer].points, 0)
-    console.log(this.points)
+    switch (this.points) {
+      case 8:
+      case 9:
+      case 10:
+        this.setPresent(20)
+        break;
+      case 11:
+      case 12:
+      case 13:
+        this.setPresent(40)
+        break;
+      case 14:
+      case 15:
+      case 16:
+      case 17:
+        this.setPresent(60)
+        break;
+      case 18:
+      case 19:
+      case 20:
+      case 21:
+        this.setPresent(80)
+        break;
+      case 22:
+      case 23:
+      case 24:
+        this.setPresent(100)
+        break;
+    }
+  },
+  setPresent: function (percent) {
+    const present = presents[percent]
+    end.querySelector(".present-container .header").innerHTML = `Вы лосось, влюблённый в себя на ${percent}%`
+    end.querySelector(".present-container .description").innerHTML = present.text
   },
   setBody: function (classname) {
     body.classList.add(classname)

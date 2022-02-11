@@ -13,14 +13,23 @@
 </head>
 
 <body>
-  <div class="main-container">
-    @@include("chunk/main.html")
-  </div>
-  <div class="test-container hidden">
-    @@include("chunk/tests.html")
-  </div>
+<div class="main-container">
+  @@include("chunk/main.html")
+</div>
+<div class="test-container hidden">
+  @@include("chunk/tests.html")
+</div>
 
-  <script src="js/main.js"></script>
+<div class="end-block hidden">
+  <div class="end-container">
+    @@include("chunk/end.html")
+  </div>
+  <div class="footer-container">
+    @@include("chunk/footer.html")
+  </div>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 
 </html>
