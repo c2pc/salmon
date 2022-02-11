@@ -1,0 +1,38 @@
+<div class="main">
+  <div class="main__items">
+    <div class="description__container">
+      <div class="logo_container">
+        @@include("logo.html")
+      </div>
+
+      <h1 class="header">
+        Тест: На сколько процентов вы лосось, влюблённый в себя
+      </h1>
+      <p class="description">
+        Это — лосось Леонид. Он знает, в чём хорош, позволяет себе ошибаться, не соглашается на переработки и всегда
+        находит время на то, что для него важно. А вы? Проверьте, на сколько процентов вы с ним совпадаете по степени
+        любви к себе😎
+      </p>
+
+      <div class="button__container button__container__desktop">
+        @@include("button.html",{
+        "class":"button__main",
+        "text":"Узнать сейчас"
+        })
+      </div>
+    </div>
+    @@include("salmon.html",{
+    "class": "salmon__image__main",
+    "src": "img/salmon-background.svg",
+    "srcMob": "img/salmon-background-mob.svg",
+    "quote":"Привет! Меня зовут Лёня и я буду твоим спутником в погружении в себя!"
+    })
+
+    <div class="button__container button__container__mob  button__container__fixed">
+      @@include("button.html",{
+      "class":"button__main",
+      "text":"Узнать сейчас"
+      })
+    </div>
+  </div>
+</div>

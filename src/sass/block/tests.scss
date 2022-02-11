@@ -1,0 +1,110 @@
+.testsItems {
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - 80px);
+  position: relative;
+
+  .background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 30px;
+    z-index: 0;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 30px 30px 0 0;
+  }
+
+  .test {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    top: 0;
+    z-index: 0;
+    background: #FFFFFF;
+    border-radius: 30px 30px 0 0;
+
+    padding: 40px 50px 80px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__number {
+      margin: 0;
+      text-align: center;
+      font-family: $font-inter;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      color: #0169ED;
+    }
+
+    &__question {
+      margin: 10px 0 0 0;
+      text-align: center;
+      font-family: $font-inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 140%;
+      color: #000000;
+    }
+
+    &__answers {
+      height: 100%;
+      margin-top: 20px;
+
+      .answer {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        padding: 13px 16px 13px 60px;
+        border: 1px solid #ECECEC;
+        position: relative;
+        cursor: pointer;
+
+        &.selected {
+          border: 1px solid #0169ED;
+          .check {
+            border: 1px solid #0169ED;
+            background: url("../img/selected.svg") no-repeat center center;
+          }
+        }
+
+        &:not(.selected):hover {
+          border: 1px solid #0169ED;
+          .check {
+            border: 1px solid #0169ED;
+          }
+        }
+
+        .text {
+          font-family: $font-inter;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 140%;
+          color: #000000;
+        }
+
+        .check {
+          position: absolute;
+          left: 20px;
+          top: calc(50% - 10.5px);
+          width: 21px;
+          height: 21px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .button__container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+}

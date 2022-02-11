@@ -1,0 +1,35 @@
+.logo {
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+
+  .krestik {
+    margin: 0 33px;
+  }
+
+  @media screen and (max-width: 470px) {
+    .mnogolososa {
+      width: 85px;
+    }
+    .zigmund {
+      width: 105px;
+    }
+    .krestik {
+      width: 16px;
+      margin: 0 15px;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .mnogolososa {
+      width: 115px;
+    }
+    .zigmund {
+      width: 135px;
+    }
+    .krestik {
+      width: 16px;
+    }
+  }
+}

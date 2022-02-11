@@ -1,0 +1,58 @@
+.salmon {
+  min-width: 50%;
+  padding-left: 48px;
+
+  @media screen and (max-width: 1300px) {
+    min-width: 100%;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  &__container {
+    height: 710px;
+    border-radius: 50px;
+    position: relative;
+    width: 100%;
+    background-color: aqua;
+  }
+
+  &__quote {
+    position: absolute;
+    top: 130px;
+    left: 40px;
+
+    @media screen and (max-width: 640px) {
+      top: 37px;
+      left: 17px;
+    }
+
+    &__container {
+      background: url("../img/quote.svg") no-repeat center top;
+      background-size: 100% 100%;
+      width: 274px;
+      height: 138px;
+      padding: 16px 10px 47px 25px;
+
+      @media screen and (max-width: 640px) {
+        background-size: 100% 100%;
+        height: 85px;
+        width: 168px;
+        padding: 11px 13px 28px 20px;
+      }
+    }
+
+    &__description {
+      margin: 0;
+      font-family: $font-inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 140%;
+      color: $color-grey;
+
+      @media screen and (max-width: 640px) {
+        font-size: 10px;
+      }
+    }
+  }
+}
