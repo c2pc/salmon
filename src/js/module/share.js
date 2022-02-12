@@ -15,15 +15,11 @@ let win = function(set) {
   if (window.focus) open.focus();
 };
 
-/**
- * Функция открытия сервиса share
- * @param {Event} e - событие, получаемое при "click"
- */
-let shareIt = function(e) {
+let shareIt = function (type) {
   let u = window.location.href; // url
   let t = document.title; // title
-  let d = document.head.querySelector("meta[name=description]") || ""; // meta description
-  switch (e.target.getAttribute("data-type")) {
+  let d = "Лосось Леонид помог мне узнать, насколько я себя люблю. Тебе тоже поможет — кликай и пройди короткий тест:"
+  switch (type) {
     case "vk":
       win({
         url: "//vk.com/share.php?url=" + u + "&title=" + t + "&description=" + d,
@@ -41,8 +37,5 @@ let shareIt = function(e) {
   }
 };
 
-// обработчик клика для блока share
-shareBox.addEventListener("click", function(e) {
-  if (e.target !== e.currentTarget) shareIt(e);
-  e.preventDefault();
-});
+document.querySelector(".end #vk").addEventListener('click', () => shareIt('vk'))
+document.querySelector(".end #fb").addEventListener('click', () => shareIt('fb'))
