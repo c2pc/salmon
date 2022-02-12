@@ -76,9 +76,9 @@ const Test = {
   setPresent: function (percent, salmon) {
     end.querySelector(".heart img").src = `img/heart${percent}.svg`
 
-    end.querySelector(".salmon .desktop").src = `img/salmon${salmon}.svg`
+    end.querySelector(".salmon .desktop").src = `img/salmon${salmon}.png`
 
-    end.querySelector(".salmon .mob").src = `img/salmon${salmon}-mob.svg`
+    end.querySelector(".salmon .mob").src = `img/salmon${salmon}-mob.png`
 
     const present = presents[percent]
     end.querySelector(".present-container .header").innerHTML = `Вы лосось, влюблённый в себя на ${percent}%`
