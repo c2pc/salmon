@@ -77,10 +77,10 @@ const Test = {
     end.querySelector(".heart img").src = `img/heart${percent}.svg`
     end.querySelector(".heart source").srcset = `img/heart${percent}.svg`
 
-    end.querySelector(".salmon picture:first-child").src = `img/salmon${salmon}.png`
+    end.querySelector(".salmon picture:first-child img").src = `img/salmon${salmon}.png`
     end.querySelector(".salmon  picture:first-child source").srcset = `img/salmon${salmon}.png`
 
-    end.querySelector(".salmon picture:last-child").src = `img/salmon${salmon}-mob.png`
+    end.querySelector(".salmon picture:last-child img").src = `img/salmon${salmon}-mob.png`
     end.querySelector(".salmon  picture:last-child source").srcset = `img/salmon${salmon}-mob.png`
 
     const present = presents[percent]
