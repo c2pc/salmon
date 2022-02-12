@@ -15,7 +15,7 @@ body.ends {
 }
 
 body.tests {
-  background: url("../img/body-background.svg") no-repeat center bottom;
+  background: url("../img/body-background.png") no-repeat center bottom;
   background-size: cover !important;
 }
 
@@ -467,8 +467,23 @@ footer .logo_container {
   padding-left: 48px;
 }
 
+.salmon .salmon-background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.salmon .salmon-background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .salmon__container {
-  background: aqua;
   height: 710px;
   border-radius: 50px;
   position: relative;
@@ -607,7 +622,7 @@ footer .logo_container {
 
 @supports (-webkit-appearance:none) {
   body.tests {
-    background: url("../img/body-background.svg") no-repeat center bottom;
+    background: url("../img/body-background.webp") no-repeat center bottom;
   }
 
   .salmon__quote__container {
@@ -617,6 +632,16 @@ footer .logo_container {
   .testsItems .test__answers .answer.selected .check {
     background: url("../img/selected.svg") no-repeat center center;
   }
+}
+
+@media screen and (min-width: 640px) {
+  .salmon .salmon-background img.mob {
+    display: none;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
 }
 
 @media screen and (min-width: 1300px) {
@@ -861,6 +886,14 @@ footer .logo_container {
 
   .present .present__container .block .instructions {
     font-size: 14px;
+  }
+
+  .salmon .salmon-background img.desktop {
+    display: none;
+  }
+
+  .salmon__container {
+    height: 377px;
   }
 
   .salmon__quote {
