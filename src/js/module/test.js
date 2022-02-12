@@ -75,6 +75,8 @@ const Test = {
     }
   },
   setPresent: function (percent) {
+    end.querySelector(".heart img").src = `img/heart${percent}.svg`
+    end.querySelector(".heart source").srcset = `img/heart${percent}.svg`
     const present = presents[percent]
     end.querySelector(".present-container .header").innerHTML = `Вы лосось, влюблённый в себя на ${percent}%`
     end.querySelector(".present-container .description").innerHTML = present.text
