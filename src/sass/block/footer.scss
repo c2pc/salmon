@@ -1,14 +1,22 @@
 footer {
   max-width: 1280px;
   width: 100%;
-  padding: 45px 20px;
+  padding: 35px 20px;
   margin: 0 auto;
 
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+    max-width: 640px;
+  }
+
   .item{
     width: 50%;
+    @media screen and (max-width: 1300px) {
+      width: 100%;
+    }
     p{
       margin: 0;
       font-family: $font-inter;
@@ -17,12 +25,27 @@ footer {
       font-size: 14px;
       line-height: 140%;
       color: rgba(0, 0, 0, 0.7);
+      @media screen and (max-width: 640px) {
+        font-size: 12px;
+      }
     }
   }
   .promotion{
     width: 40%;
+
+    @media screen and (max-width: 1300px) {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
     .black{
       font-weight: bold;
+    }
+  }
+  .logo_container{
+    display: none;
+    @media screen and (max-width: 1300px) {
+      display: block;
     }
   }
 }

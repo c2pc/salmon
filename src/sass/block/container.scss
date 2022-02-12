@@ -7,6 +7,9 @@
   @media screen and (max-width: 1300px) {
     max-width: 640px;
   }
+  @media screen and (max-width: 540px) {
+    padding: 0px 20px 30px 20px;
+  }
 }
 
 .test-container {
@@ -14,6 +17,9 @@
   width: 100%;
   padding: 80px 15px 0 15px;
   margin: 0 auto;
+  @media screen and (max-width: 640px) {
+    padding-top: 60px;
+  }
 }
 
 .footer-container {

@@ -41,8 +41,6 @@ const Test = {
     this.setVisible(tests)
   },
   calcPoints: function () {
-    let percent = 0
-    let text = ''
     this.points = this.questions.reduce((sum, question) => sum + question.answers[question.answer].points, 0)
     switch (this.points) {
       case 8:
@@ -72,6 +70,8 @@ const Test = {
       case 24:
         this.setPresent(100)
         break;
+      default:
+        this.setPresent(20)
     }
   },
   setPresent: function (percent) {
@@ -135,7 +135,7 @@ const Test = {
 }
 
 const test = Object.create(Test);
-test.setStageMain()
+test.setStageEnd()
 
 const mainButtons = main.querySelectorAll(".button__main")
 mainButtons.forEach(item => item.addEventListener('click', () => test.setStageTest()));

@@ -9,6 +9,18 @@
     }
   }
 
+  .heart {
+    max-width: 126px;
+    @media screen and (max-width: 640px) {
+      max-width: 86px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   .description__container {
     min-width: 50%;
     padding-right: 60px;
@@ -22,6 +34,9 @@
       background: #FFFFFF;
       border-radius: 30px;
       padding: 43px 42px 40px 50px;
+      @media screen and (max-width: 640px) {
+        padding: 40px 25px 30px 25px;
+      }
 
       .header {
         margin: 21px 0 0 0;
@@ -31,6 +46,9 @@
         font-size: 24px;
         line-height: 140%;
         color: #2A2A2A;
+        @media screen and (max-width: 640px) {
+          font-size: 18px;
+        }
       }
 
       .description {
@@ -41,6 +59,9 @@
         font-size: 16px;
         line-height: 140%;
         color: #2A2A2A;
+        @media screen and (max-width: 640px) {
+          font-size: 14px;
+        }
       }
 
       .button__container {
@@ -52,6 +73,10 @@
     .socials {
       margin-top: 65px;
       padding-left: 50px;
+      @media screen and (max-width: 1300px) {
+        padding-left: 25px;
+        margin-top: 30px;
+      }
 
       .social {
         margin-right: 15px;
@@ -73,6 +98,10 @@
         line-height: 140%;
         color: #2A2A2A;
         margin-top: 20px;
+        margin-bottom: 0;
+        @media screen and (max-width: 640px) {
+          font-size: 14px;
+        }
       }
     }
   }
