@@ -43,40 +43,43 @@ const Test = {
   calcPoints: function () {
     this.points = this.questions.reduce((sum, question) => sum + question.answers[question.answer].points, 0)
     switch (this.points) {
-      case 8:
-      case 9:
-      case 10:
-        this.setPresent(20)
-        break;
       case 11:
       case 12:
       case 13:
-        this.setPresent(40)
+        this.setPresent(40, 20)
         break;
       case 14:
       case 15:
       case 16:
       case 17:
-        this.setPresent(60)
+        this.setPresent(60, 100)
         break;
       case 18:
       case 19:
       case 20:
       case 21:
-        this.setPresent(80)
+        this.setPresent(80, 100)
         break;
       case 22:
       case 23:
       case 24:
-        this.setPresent(100)
+        this.setPresent(100, 100)
         break;
+      case 8:
+      case 9:
+      case 10:
       default:
-        this.setPresent(20)
+        this.setPresent(20, 20)
+        break;
     }
   },
-  setPresent: function (percent) {
+  setPresent: function (percent, salmon) {
     end.querySelector(".heart img").src = `img/heart${percent}.svg`
     end.querySelector(".heart source").srcset = `img/heart${percent}.svg`
+
+    end.querySelector(".salmon img").src = `img/salmon${salmon}.png`
+    end.querySelector(".salmon source").srcset = `img/salmon${salmon}.png`
+
     const present = presents[percent]
     end.querySelector(".present-container .header").innerHTML = `Вы лосось, влюблённый в себя на ${percent}%`
     end.querySelector(".present-container .description").innerHTML = present.text
