@@ -22,6 +22,7 @@ const Test = {
     this.stage = 'main'
     this.setHidden(tests)
     this.setVisible(main)
+    window.scrollBy(0, 0)
   },
   setStageEnd: function () {
     this.calcPoints()
@@ -30,6 +31,7 @@ const Test = {
     this.setHidden(main)
     this.setHidden(tests)
     this.setVisible(end)
+    window.scrollBy(0, 0)
   },
   setStageTest: function () {
     this.setBody('tests')
@@ -39,6 +41,7 @@ const Test = {
     this.setPoints(0)
     this.setHidden(main)
     this.setVisible(tests)
+    window.scrollBy(0, 0)
   },
   calcPoints: function () {
     this.points = this.questions.reduce((sum, question) => sum + question.answers[question.answer].points, 0)
