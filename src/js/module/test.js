@@ -1,5 +1,6 @@
 import {questions} from './questions'
 import {presents} from './present'
+import {share} from './share'
 
 const getStages = (...stages) => {
   return ['main', 'tests', 'end'].filter(item => !stages.includes(item))
@@ -23,7 +24,6 @@ const Test = {
     this.setHidden(tests)
     this.setHidden(end)
     this.setVisible(main)
-    window.scrollBy(0, 0)
   },
   setStageEnd: function () {
     this.calcPoints()
@@ -32,7 +32,6 @@ const Test = {
     this.setHidden(main)
     this.setHidden(tests)
     this.setVisible(end)
-    window.scrollBy(0, 0)
   },
   setStageTest: function () {
     this.setBody('tests')
@@ -42,7 +41,6 @@ const Test = {
     this.setPoints(0)
     this.setHidden(main)
     this.setVisible(tests)
-    window.scrollBy(0, 0)
   },
   calcPoints: function () {
     this.points = this.questions.reduce((sum, question) => sum + question.answers[question.answer].points, 0)
@@ -87,6 +85,10 @@ const Test = {
     const present = presents[percent]
     end.querySelector(".present-container .header").innerHTML = `Вы лосось, влюблённый в себя на ${percent}%`
     end.querySelector(".present-container .description").innerHTML = present.text
+
+    share.updateContent({
+      title: `Вы лосось, влюблённый в себя на ${percent}%`,
+    })
   },
   setBody: function (classname) {
     body.classList.add(classname)
