@@ -64,7 +64,7 @@
     }
 
     @media screen and (max-width: 440px) {
-      top: 37px;
+      top: 75px;
       left: 17px;
     }
 
@@ -73,18 +73,18 @@
       background-size: 100% 100%;
       width: 274px;
       height: 138px;
-      padding: 16px 10px 47px 25px;
+      padding: 18px 10px 47px 25px;
 
       @media screen and (max-width: 640px) {
         background-size: 100% 100%;
         width: 230px;
-        height: 120px;
+        height: 75px;
       }
 
       @media screen and (max-width: 440px) {
         background-size: 100% 100%;
         width: 168px;
-        height: 85px;
+        height: 55px;
         padding: 11px 13px 28px 20px;
       }
     }
@@ -103,6 +103,29 @@
       }
       @media screen and (max-width: 440px) {
         font-size: 10px;
+      }
+    }
+  }
+
+  &__quote__end {
+    .salmon__quote__container {
+      background: url("../img/quote-end.svg") no-repeat center top;
+      background-size: 100% 100%;
+      width: 274px;
+      height: 138px;
+      padding: 16px 10px 47px 25px;
+
+      @media screen and (max-width: 640px) {
+        background-size: 100% 100%;
+        width: 230px;
+        height: 120px;
+        padding: 13px 10px 47px 29px;
+      }
+
+      @media screen and (max-width: 440px) {
+        width: 168px;
+        height: 85px;
+        padding: 7px 10px 47px 25px;
       }
     }
   }

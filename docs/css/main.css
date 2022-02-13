@@ -201,6 +201,10 @@ footer .logo_container {
   align-items: center;
 }
 
+.logo .zigmund {
+  width: 140px;
+}
+
 .logo .krestik {
   margin: 0 33px;
 }
@@ -502,13 +506,21 @@ footer .logo_container {
   background-size: 100% 100%;
   width: 274px;
   height: 138px;
-  padding: 16px 10px 47px 25px;
+  padding: 18px 10px 47px 25px;
 }
 
 .salmon__quote__description {
   font: normal normal 18px/140% "Inter";
   margin: 0;
   color: #2A2A2A;
+}
+
+.salmon__quote__end .salmon__quote__container {
+  background: url("../img/quote-end.svg") no-repeat center top;
+  background-size: 100% 100%;
+  width: 274px;
+  height: 138px;
+  padding: 16px 10px 47px 25px;
 }
 
 .testsItems {
@@ -628,6 +640,10 @@ footer .logo_container {
 
   .salmon__quote__container {
     background: url("../img/quote.svg") no-repeat center top;
+  }
+
+  .salmon__quote__end .salmon__quote__container {
+    background: url("../img/quote-end.svg") no-repeat center top;
   }
 
   .testsItems .test__answers .answer.selected .check {
@@ -901,11 +917,18 @@ footer .logo_container {
   .salmon__quote__container {
     background-size: 100% 100%;
     width: 230px;
-    height: 120px;
+    height: 75px;
   }
 
   .salmon__quote__description {
     font-size: 14px;
+  }
+
+  .salmon__quote__end .salmon__quote__container {
+    background-size: 100% 100%;
+    width: 230px;
+    height: 120px;
+    padding: 13px 10px 47px 29px;
   }
 
   .testsItems .test {
@@ -1001,19 +1024,25 @@ footer .logo_container {
   }
 
   .salmon__quote {
-    top: 37px;
+    top: 75px;
     left: 17px;
   }
 
   .salmon__quote__container {
     background-size: 100% 100%;
     width: 168px;
-    height: 85px;
+    height: 55px;
     padding: 11px 13px 28px 20px;
   }
 
   .salmon__quote__description {
     font-size: 10px;
+  }
+
+  .salmon__quote__end .salmon__quote__container {
+    width: 168px;
+    height: 85px;
+    padding: 7px 10px 47px 25px;
   }
 
 @supports (-webkit-appearance:none) {

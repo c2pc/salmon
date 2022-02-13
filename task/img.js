@@ -23,11 +23,11 @@ const img = () => {
       }))
     }))
     .pipe(newer(path.img.dest))
-    .pipe(webp())
+    //.pipe(webp())
     .pipe(dest(path.img.dest))
     .pipe(src(path.img.src))
     .pipe(newer(path.img.dest))
-    .pipe(gulpIf(app.isProd, imagemin(app.imagemin)))
+    //.pipe(gulpIf(app.isProd, imagemin(app.imagemin)))
     .pipe(dest(path.img.dest));
 }
 
