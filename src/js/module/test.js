@@ -48,39 +48,39 @@ const Test = {
       case 11:
       case 12:
       case 13:
-        this.setPresent(40, 20)
+        this.setPresent(40)
         break;
       case 14:
       case 15:
       case 16:
       case 17:
-        this.setPresent(60, 60)
+        this.setPresent(60)
         break;
       case 18:
       case 19:
       case 20:
       case 21:
-        this.setPresent(80, 60)
+        this.setPresent(80)
         break;
       case 22:
       case 23:
       case 24:
-        this.setPresent(100, 100)
+        this.setPresent(100)
         break;
       case 8:
       case 9:
       case 10:
       default:
-        this.setPresent(20, 20)
+        this.setPresent(20)
         break;
     }
   },
-  setPresent: function (percent, salmon) {
+  setPresent: function (percent) {
     end.querySelector(".heart img").src = `img/heart${percent}.svg`
 
-    end.querySelector(".salmon .desktop").src = `img/salmon${salmon}.png`
+    end.querySelector(".salmon .desktop").src = `img/salmon${percent}.png`
 
-    end.querySelector(".salmon .mob").src = `img/salmon${salmon}-mob.png`
+    end.querySelector(".salmon .mob").src = `img/salmon${percent}-mob.png`
 
     const present = presents[percent]
     end.querySelector(".present-container .header").innerHTML = `Вы лосось, влюблённый в себя на ${percent}%`
