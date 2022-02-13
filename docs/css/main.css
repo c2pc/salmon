@@ -431,6 +431,11 @@ footer .logo_container {
   justify-content: center;
 }
 
+.present .present__container .block .smile img {
+  width: 32px;
+  height: 32px;
+}
+
 .present .present__container .block .instructions {
   font: normal normal 16px/140% "Inter";
   color: #000000;
