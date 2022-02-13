@@ -11,7 +11,6 @@
   .salmon-background{
     height: 100%;
     width: 100%;
-
     img{
       position: absolute;
       top:0;
@@ -22,12 +21,12 @@
       width: 100%;
     }
     img.desktop{
-      @media screen and (max-width: 540px) {
+      @media screen and (max-width: 640px) {
         display: none;
       }
     }
     img.mob{
-      @media screen and (min-width: 540px) {
+      @media screen and (min-width: 640px) {
         display: none;
       }
     }
@@ -38,18 +37,11 @@
     border-radius: 50px;
     position: relative;
     width: 100%;
-    /*@media screen and (max-width: 640px) {
-      background: url("../img/salmon-mob.png") no-repeat center center;
-      background-size: cover;
-    }*/
 
     @media screen and (max-width: 640px) {
       min-height: calc((100vw - 40px) * 1.25);
       height: unset;
     }
-    /*@media screen and (max-width: 440px) {
-      min-height: 377px;
-    }*/
   }
 
 
@@ -77,22 +69,20 @@
       background: url("../img/quote.svg") no-repeat center top;
       background-size: 100% 100%;
       width: 274px;
-      //height: 138px;
-      display: flex;
-      align-items: center;
-      padding: 18px 10px 35px 25px;
+      height: 138px;
+      padding: 18px 10px 47px 25px;
 
       @media screen and (max-width: 640px) {
         background-size: 100% 100%;
         width: 230px;
-        //height: 75px;
+        height: 75px;
       }
 
       @media screen and (max-width: 440px) {
         background-size: 100% 100%;
         width: 168px;
         height: 55px;
-        padding: 0 13px 13px 20px;
+        padding: 11px 13px 28px 20px;
       }
     }
 
@@ -120,9 +110,7 @@
       background-size: 100% 100%;
       width: 274px;
       height: 138px;
-      display: flex;
-      align-items: center;
-      padding: 12px 6px 52px 34px;
+      padding: 16px 10px 47px 25px;
 
       @media screen and (max-width: 640px) {
         background-size: 100% 100%;
@@ -134,7 +122,7 @@
       @media screen and (max-width: 440px) {
         width: 168px;
         height: 85px;
-        padding: 7px 10px 34px 25px;
+        padding: 7px 10px 47px 25px;
       }
     }
   }
