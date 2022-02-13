@@ -511,6 +511,13 @@ footer .logo_container {
   border-radius: 50px;
   position: relative;
   width: 100%;
+  /*@media screen and (max-width: 640px) {
+    background: url("../img/salmon-mob.png") no-repeat center center;
+    background-size: cover;
+  }*/
+  /*@media screen and (max-width: 440px) {
+    min-height: 377px;
+  }*/
 }
 
 .salmon__quote {
@@ -662,7 +669,7 @@ footer .logo_container {
   justify-content: center;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 540px) {
   .salmon .salmon-background img.mob {
     display: none;
   }
@@ -900,13 +907,9 @@ footer .logo_container {
     font-size: 14px;
   }
 
-  .salmon .salmon-background img.desktop {
-    display: none;
-  }
-
   .salmon__container {
-    background: url("../img/salmon-mob.png") no-repeat center center;
-    background-size: cover;
+    min-height: calc((100vw - 40px) * 1.25);
+    height: unset;
   }
 
   .salmon__quote {
@@ -971,9 +974,8 @@ footer .logo_container {
     font-size: 18px;
   }
 
-  .salmon__container {
-    min-height: 500px;
-    height: unset;
+  .salmon .salmon-background img.desktop {
+    display: none;
   }
 
   .salmon__quote {
@@ -1006,10 +1008,6 @@ footer .logo_container {
 }
 
 @media screen and (max-width: 440px) {
-  .salmon__container {
-    min-height: 377px;
-  }
-
   .salmon__quote {
     top: 75px;
     left: 17px;

@@ -144,7 +144,7 @@ const Test = {
 }
 
 const test = Object.create(Test);
-test.setStageEnd()
+test.setStageMain()
 
 const mainButtons = main.querySelectorAll(".button__main")
 mainButtons.forEach(item => item.addEventListener('click', () => test.setStageTest()));
