@@ -33,7 +33,7 @@
     .present-container {
       background: #FFFFFF;
       border-radius: 30px;
-      padding: 43px 42px 40px 50px;
+      padding: 43px 42px 20px 50px;
       @media screen and (max-width: 640px) {
         padding: 40px 25px 30px 25px;
       }
@@ -104,6 +104,25 @@
           font-size: 14px;
         }
       }
+    }
+  }
+
+  .button-to-main__container{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    .button-to-main{
+      background-color: transparent!important;
+      border: none!important;
+      outline: none!important;
+      cursor: pointer;
+      color: #FB7935;
+      font-family: $font-inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 140%;
     }
   }
 }

@@ -21,6 +21,7 @@ const Test = {
     this.setBody('main')
     this.stage = 'main'
     this.setHidden(tests)
+    this.setHidden(end)
     this.setVisible(main)
     window.scrollBy(0, 0)
   },
@@ -92,7 +93,7 @@ const Test = {
     body.classList.remove(...getStages(classname))
   },
   setQuestions: function () {
-    this.questions = questions
+    this.questions = questions.map(item=>({...item, answer: undefined}))
   },
   setPoints: function (point) {
     this.points = point
@@ -159,3 +160,5 @@ document.addEventListener('keypress', (e) => {
     }
   }
 })
+
+end.querySelector(".button-to-main").addEventListener('click', () => test.setStageMain())

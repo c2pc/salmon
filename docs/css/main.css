@@ -108,7 +108,7 @@ body.tests {
 .end .description__container .present-container {
   background: #FFFFFF;
   border-radius: 30px;
-  padding: 43px 42px 40px 50px;
+  padding: 43px 42px 20px 50px;
 }
 
 .end .description__container .present-container .header {
@@ -155,6 +155,26 @@ body.tests {
   color: #2A2A2A;
   margin-top: 20px;
   margin-bottom: 0;
+}
+
+.end .button-to-main__container {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.end .button-to-main__container .button-to-main {
+  font: normal normal 16px/140% "Inter";
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer;
+  color: #FB7935;
 }
 
 footer {
