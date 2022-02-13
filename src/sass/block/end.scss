@@ -108,14 +108,12 @@
   }
 
   .button-to-main__container{
-    width: 100%;
+    width: 100%!important;
+    min-width: 100%!important;
     margin-top: 20px;
     display: flex;
     justify-content: center;
     .button-to-main{
-      background-color: transparent!important;
-      border: none!important;
-      outline: none!important;
       cursor: pointer;
       color: #FB7935;
       font-family: $font-inter;

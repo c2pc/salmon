@@ -158,7 +158,8 @@ body.tests {
 }
 
 .end .button-to-main__container {
-  width: 100%;
+  width: 100% !important;
+  min-width: 100% !important;
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,9 +171,6 @@ body.tests {
 
 .end .button-to-main__container .button-to-main {
   font: normal normal 16px/140% "Inter";
-  background: transparent !important;
-  border: none !important;
-  outline: none !important;
   cursor: pointer;
   color: #FB7935;
 }
