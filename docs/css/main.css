@@ -523,8 +523,13 @@ footer .logo_container {
   background: url("../img/quote.svg") no-repeat center top;
   background-size: 100% 100%;
   width: 274px;
-  height: 138px;
-  padding: 18px 10px 47px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 18px 10px 35px 25px;
 }
 
 .salmon__quote__description {
@@ -538,7 +543,13 @@ footer .logo_container {
   background-size: 100% 100%;
   width: 274px;
   height: 138px;
-  padding: 16px 10px 47px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 6px 52px 34px;
 }
 
 .testsItems {
@@ -651,32 +662,10 @@ footer .logo_container {
   justify-content: center;
 }
 
-@supports (-webkit-appearance:none) {
-  body.tests {
-    background: url("../img/body-background.webp") no-repeat center bottom;
-  }
-
-  .salmon__quote__container {
-    background: url("../img/quote.svg") no-repeat center top;
-  }
-
-  .salmon__quote__end .salmon__quote__container {
-    background: url("../img/quote-end.svg") no-repeat center top;
-  }
-
-  .testsItems .test__answers .answer.selected .check {
-    background: url("../img/selected.svg") no-repeat center center;
-  }
-}
-
 @media screen and (min-width: 640px) {
   .salmon .salmon-background img.mob {
     display: none;
   }
-
-@supports (-webkit-appearance:none) {
-
-}
 }
 
 @media screen and (min-width: 1300px) {
@@ -687,10 +676,6 @@ footer .logo_container {
   .main .button__container.button__container__desktop {
     display: block;
   }
-
-@supports (-webkit-appearance:none) {
-
-}
 }
 
 @media screen and (max-width: 1300px) {
@@ -779,10 +764,6 @@ footer .logo_container {
     padding-left: 0;
     margin-top: 40px;
   }
-
-@supports (-webkit-appearance:none) {
-
-}
 }
 
 @media screen and (max-width: 760px) {
@@ -820,10 +801,6 @@ footer .logo_container {
   .present .close__button:focus {
     background: #FF6B1E;
   }
-
-@supports (-webkit-appearance:none) {
-
-}
 }
 
 @media screen and (max-width: 640px) {
@@ -927,6 +904,11 @@ footer .logo_container {
     display: none;
   }
 
+  .salmon__container {
+    background: url("../img/salmon-mob.png") no-repeat center center;
+    background-size: cover;
+  }
+
   .salmon__quote {
     top: 130px;
     left: 30px;
@@ -935,7 +917,6 @@ footer .logo_container {
   .salmon__quote__container {
     background-size: 100% 100%;
     width: 230px;
-    height: 75px;
   }
 
   .salmon__quote__description {
@@ -974,10 +955,6 @@ footer .logo_container {
   .testsItems .test__answers .answer .check {
     left: 10px;
   }
-
-@supports (-webkit-appearance:none) {
-
-}
 }
 
 @media screen and (max-width: 540px) {
@@ -1003,10 +980,6 @@ footer .logo_container {
     top: 80px;
     left: 17px;
   }
-
-@supports (-webkit-appearance:none) {
-
-}
 }
 
 @media screen and (max-width: 470px) {
@@ -1030,10 +1003,6 @@ footer .logo_container {
   .main .description__container .description {
     font-size: 14px;
   }
-
-@supports (-webkit-appearance:none) {
-
-}
 }
 
 @media screen and (max-width: 440px) {
@@ -1050,7 +1019,7 @@ footer .logo_container {
     background-size: 100% 100%;
     width: 168px;
     height: 55px;
-    padding: 11px 13px 28px 20px;
+    padding: 0 13px 13px 20px;
   }
 
   .salmon__quote__description {
@@ -1060,20 +1029,12 @@ footer .logo_container {
   .salmon__quote__end .salmon__quote__container {
     width: 168px;
     height: 85px;
-    padding: 7px 10px 47px 25px;
+    padding: 7px 10px 34px 25px;
   }
-
-@supports (-webkit-appearance:none) {
-
-}
 }
 
 @media screen and (max-width: 420px) {
   .main .description__container .header {
     font-size: 30px;
   }
-
-@supports (-webkit-appearance:none) {
-
-}
 }

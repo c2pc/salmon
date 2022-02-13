@@ -29,7 +29,7 @@ const css = () => {
     }))
     .pipe(concat('main.css'))
     .pipe(cssImport())
-    .pipe(webpCss())
+    //.pipe(webpCss())
     .pipe(autoprefixer())
     .pipe(shorthand())
     .pipe(groupMedia())
